@@ -5,9 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="DTO\" />
-    <Folder Include="DbContexts\" />
     <Folder Include="Commands\" />
     <Folder Include="Handlers\" />
     <Folder Include="Queries\" />
