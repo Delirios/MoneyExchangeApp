@@ -8,6 +8,5 @@ namespace MoneyExchangeApp.DTO
     public class Root
     {
         public Rates rates { get; set; }
-        public string date { get; set; }
     }
 }

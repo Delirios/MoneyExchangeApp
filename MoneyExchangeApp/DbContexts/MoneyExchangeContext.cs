@@ -12,6 +12,6 @@ namespace MoneyExchangeApp.DbContexts
         public MoneyExchangeContext(DbContextOptions<MoneyExchangeContext> options) : base(options)
         {
         }
-        DbSet<ExchangeHistory> ExchangeHistory;
+        public DbSet<ExchangeHistory> ExchangeHistory { get; set; }
     }
 }

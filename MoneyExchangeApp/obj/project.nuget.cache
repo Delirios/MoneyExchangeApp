@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "wPXZGXQmk7YdRIRd6rlY7EUYH0Bkg2LOVzpi4kSejo27LgMMcP5TJekuHq4F81N3lB+Y4ATR3+V3DS+/Hs/Lqg==",
+  "dgSpecHash": "DrwJU0/8RXK5J47chprM3SyWrMwnbeW5Idwdv9DbeTkHkKl4VVZt9iXfLTQqYFsSd7ABMxG5LyN6RFk06A7Xeg==",
   "success": true,
   "projectFilePath": "C:\\Git_project\\MoneyExchangeApp\\MoneyExchangeApp\\MoneyExchangeApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\lushc\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\lushc\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\lushc\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\lushc\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\lushc\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

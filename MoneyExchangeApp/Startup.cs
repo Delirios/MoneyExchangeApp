@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MoneyExchangeApp.DbContexts;
+using MoneyExchangeApp.Repositories;
+using MoneyExchangeApp.Services;
 
 namespace MoneyExchangeApp
 {
@@ -28,6 +31,9 @@ namespace MoneyExchangeApp
 
             services.AddDbContext<MoneyExchangeContext>(options =>
    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddScoped<IMoneyExchangeRepository, MoneyExchangeRepository>();
+            services.AddScoped<IMoneyExchangeService, MoneyExchangeService>();
 
             services.AddMediatR(typeof(Startup));
         }
