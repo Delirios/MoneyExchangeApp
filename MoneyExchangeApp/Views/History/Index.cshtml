@@ -1,0 +1,30 @@
+﻿@model List<ExchangeHistory>
+
+@if (Model.Count > 0)
+{
+    <table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>From Amount</td>
+                <td>From Currency</td>
+                <td>To Amount</td>
+                <td>To Currency</td>
+                <td>Date</td>            
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (ExchangeHistory item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.FromAmount</td>
+                    <td>@item.FromCurrency</td>
+                    <td>@item.ToAmount</td>
+                    <td>@item.ToCurrency</td>
+                    <td>@item.Date</td>                    
+                </tr>
+            }
+        </tbody>
+    </table>
+}

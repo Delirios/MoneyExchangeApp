@@ -1,0 +1,57 @@
+﻿@model MoneyExchangeViewModel
+
+<div class="container" id="test">
+    <form asp-controller="Home" asp-action="Index" data-ajax="true" data-ajax-mode="replase" data-ajax-method="post" data-ajax-update="#test" data-ajax-loading="#spinner" class="form-horizontal" role="form" enctype="multipart/form-data">
+        <div class="row">
+            <div class="form-group  col-md-3">
+                <label class="control-label" asp-for="FromAmount"></label>
+                <div>
+                    <input id="FromAmount" class="form-control" type="text" value="@Model.FromAmount" asp-for="FromAmount">
+                    <span asp-validation-for="FromAmount"></span>
+                </div>
+            </div>
+
+            <div class="col-md-2 dropdown">
+                <label class="control-label" asp-for="FromCurrency"></label>
+                <select class="form-control" asp-items="@(new SelectList(Model.RatesDictionary , "Key","Value"))" asp-for="FromCurrency">
+                </select>
+            </div>
+            <div class="form-group col-md-0 arrow-png">
+                <img src="~/image/exchange.png" />
+            </div>
+            <div class="form-group col-md-3 ">
+                <label class="control-label" asp-for="ToAmount"></label>
+                <div>
+                    <input id="ToAmount" class="form-control" type="text" value="@Model.ToAmount" asp-for="ToAmount">
+                    <span asp-validation-for="ToAmount"></span>
+                </div>
+            </div>
+
+            <div class="col-md-2 dropdown">
+                <label class="control-label" asp-for="ToCurrency"></label>
+                <select class="form-control" asp-items="@(new SelectList(Model.RatesDictionary , "Key","Value"))" asp-for="ToCurrency">
+                </select>
+            </div>
+            <div class="col-md-1 button-padding">
+                <button type="submit" class="btn btn-dark">Exchange</button>
+            </div>
+        </div>
+        <div class="row">
+            @if (Model.Ratio == 0)
+            {
+                <label class="control-label"></label>
+            }
+            else
+            {
+                <label class="control-label col-md-10">1 @Model.FromCurrency =  @Model.Ratio @Model.ToCurrency</label>
+            }
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border text-dark mb-3"
+                 style="width: 3rem; height: 3rem; display: none"
+                 role="status" id="spinner">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </form>
+</div>

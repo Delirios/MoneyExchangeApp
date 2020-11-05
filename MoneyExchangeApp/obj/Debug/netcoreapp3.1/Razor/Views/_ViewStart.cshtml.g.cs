@@ -28,13 +28,20 @@ using MoneyExchangeApp.Models;
 #nullable disable
 #nullable restore
 #line 3 "C:\Git_project\MoneyExchangeApp\MoneyExchangeApp\Views\_ViewImports.cshtml"
+using MoneyExchangeApp.Commands;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Git_project\MoneyExchangeApp\MoneyExchangeApp\Views\_ViewImports.cshtml"
 using MoneyExchangeApp.ViewModels;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dbe053d7f3796bf1bacc7a8362108a5c821ca529", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8d0d62e121abc42604ea0cea82b6d3aabdf1b115", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998
