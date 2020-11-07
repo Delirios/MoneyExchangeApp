@@ -14,10 +14,8 @@ namespace MoneyExchangeApp.Services
     public class MoneyExchangeService : IMoneyExchangeService
     {
         private readonly string url = "https://api.exchangeratesapi.io/latest";
-        private IMemoryCache _cache;
-        public MoneyExchangeService(IMemoryCache cache)
+        public MoneyExchangeService()
         {
-            _cache = cache;
         }
 
         public  double CalculateTheRate(ExchangeHistory exchangeHistory)

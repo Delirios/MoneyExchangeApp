@@ -3,9 +3,7 @@ using MoneyExchangeApp.DbContexts;
 using MoneyExchangeApp.DTO;
 using MoneyExchangeApp.Models;
 using MoneyExchangeApp.Services;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace MoneyExchangeApp.Repositories
@@ -35,7 +33,7 @@ namespace MoneyExchangeApp.Repositories
         public async Task<Rates> GetRates()
         {
             var result = await _moneyExchangeService.GetRatesFromApi();
-            return result.rates;
+            return result.Rates;
         }
     }
 }

@@ -1,15 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Microsoft.Extensions.Logging;
 using MoneyExchangeApp.Commands;
-using MoneyExchangeApp.DTO;
-using MoneyExchangeApp.Models;
 using MoneyExchangeApp.Queries;
 using MoneyExchangeApp.Services;
 using MoneyExchangeApp.ViewModels;
